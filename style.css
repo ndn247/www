@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-weight: 800;
+	font-size: 50px;
+}
+
+h3{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h4{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;			/*'auto' automatically makes left and right margins the same out of the remaining margin space within parent elmement*/
+}
+
+.hero-banner{
+	background-color: #007FFF;
+	min-height: 100vh; 					/*100% viewport height*/
+	padding: 50px 20px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-banner h4, 
+.hero-banner h4 a{
+	color: white;
+	margin: 0;
+}
+
+.hero-banner h1, 
+.hero-banner h1 a{               /*space between element selectors indicates nested elements*/
+	color: white;
+	margin: 14px 0 20px;
+}
+
+.hero-banner h3{
+	color: white;
+	margin: 0 0 35px;
+}
+
+a.cta, button.cta{               /*'.' indicates class of the specified element. When element is not specified, it is a div*/
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background: #007FFF;
+	display: inline-block;		/*'a' is an inline element by default, meaning the box it occupies is the same size as the element it contains. inline-block allow size and space customization*/
+	box-shadow: 0 0 0 10px rgba(0,127,255,.15);  /* adds shadow to element*/
+	padding: 20px 30px;
+	border-radius: 10px;
+	text-decoration: none;		/* gets rid of line under hyperlink*/
+}
+
+a.cta.alt{         				/* parent style class 'cta' is also applied */              
+	background-color: #FFD400;
+	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+	color: #111111; 
+}
+
+.character1{
+	background: url(img/circle-guy.png) no-repeat 0 0;  /* background: bg-image bg-repeat bg-origin (x y) */
+	background-size: 100%;
+	width: 363px;
+	height: 344px;
+	position: absolute; top: 10%; right: 10%;     /* positioned parent is hero banner*/ 
+	transform: rotate(15deg);
+}
+
+.character2{
+	background: url(img/ghost-guy.png) no-repeat 0 0;  
+	background-size: 100%;
+	width: 230px;
+	height: 343px;
+	position: absolute; top: 175px; right: 300px;
+}
+
+.character3{
+	background: url(img/eish-guy.png) no-repeat 0 0;  
+	background-size: 100%;
+	width: 215px;
+	height: 285px;
+	position: absolute; bottom: 74px; right: 109px;
+}
+
+/* <div class="hero-banner">
+  	<div class="wrapper"></div>
+  		<h4>Rich from <a href="https://taptapkaboom.com/">Tap Tap Kaboom</a> presents</h4>
+  		<h1>The Silliest &amp;<br>
+			Most Awesome Gang<br>
+			In The World!</h1>
+		<h3>It’s Circle Guy, Hat Guy &amp; Red Guy.<br>
+			They’re the best of friends.</h3>
+		<a class="cta alt" href="#more-info">Read More</a>
+		<div class="character1"></div>
+		<div class="character2"></div>
+		<div class="character3"></div>
+	</div>*/
