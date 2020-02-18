@@ -6,12 +6,12 @@ body{
 }
 
 h1{
-	font-weight: 800;
+	font-weight: 900;
 	font-size: 50px;
 }
 
 h2{
-	font-weight: 800;
+	font-weight: 900;
 	font-size: 50px;	
 }
 
@@ -149,8 +149,20 @@ nav ul li a{
 	text-align: center;
 }
 
-.highlight {
+.more-info p{
+	margin: 18px 0 35px;
+}
 
+.more-info h2{
+	margin: 50px 0 0 0;
+}
+
+.highlight {
+	background-color: #FFADF9;
+	font-weight: 900;
+	color: #FF3300;
+	padding: 5px 10px;
+	display: inline;
 }
 
 
